@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="./src/images/favicon/logoipsum-296.svg" type="image/x-icon">
+    <title>Nesne Tabanlı Programlama Final | Sonat Saygın İpek</title>
+
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!----------------------------Navbar--------------------------->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Nesne Tabanlı Final">
+        <div class="container">
+            <!-- Brand Name -->
+            <a class="navbar-brand fw-bold" href="./">
+                <img src="./src/images/brand_logo.svg" alt="final exam brand logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse ms-5" id="navbarsExample07">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-5">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./hastalistele.php">Hastalar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./goruntuyukle.php">Görüntü Yükle</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-----------------------------Navbar End---------------------->
+
+
+
+    <!-- Carousel -->
+    <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel" data-bs-theme="light">
+        <!-- Carousel Indicators -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+        </div>
+        <!-- Carousel Indicators End -->
+    
+        
+        <!-- Carousel Items -->
+        <div class="carousel-inner">
+    
+            <!-- Carousel Item -1 -->
+            <div class="carousel-item active">
+                <img src="./src/images/group-doctors2.png" alt="group doctors" width="100%" height="100%" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+
+                <!-- Slider Desc -->
+                <div class="container">
+                    <div class="carousel-caption text-start">
+                        <h1 class="display-4 ">MR Görüntülerini Yükle</h1>
+                        <p class="opacity-75 text-black">MR görüntülerinizi yükleyerek hastalık teşhis süresini hızlandırın!</p>
+                        <p><a class="btn btn-lg btn-primary shadow-lg" href="./goruntuyukle.php">Hemen Yükle</a></p>
+                    </div>
+                </div>
+                <!-- Slider Desc End -->
+            </div>
+            <!-- Carousel Item -1 End -->
+    
+            <!-- Carousel Item -2 -->
+            <div class="carousel-item">
+                <img src="./src/images/hospital.png" alt="group doctors" width="100%" height="100%" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+
+                <!-- Slider Desc None -->
+            </div>
+            <!-- Carousel Item -2 End -->
+    
+    
+            <!-- Carousel Item -3 -->
+            <div class="carousel-item">
+                <img src="./src/images/group-doctors.png" alt="group doctors" width="100%" height="100%" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+
+                <!-- Slider Desc None -->
+            </div>
+            <!-- Carousel Item -3 End -->
+    
+        </div>
+        <!-- Carousel Items End -->
+    
+    
+        <!-- Next & Previous Buttons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        <!-- Next & Previous Buttons End -->
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- Feature Cards -->
+    <div class="container mt-5">
+    
+        <!-- Feature Card Items -->
+        <div class="row text-center">
+    
+            <!-- Card Item -1 -->
+            <div class="col-lg-4">
+                <i class="fa-solid fa-hospital-user text-bg-primary fs-1 p-5 bg-primary border border-5 border-primary-subtle rounded-circle"></i>
+
+                <h2 class="display-6 mt-3">Hasta Listele</h2>
+                <p class="text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate atque necessitatibus inventore mollitia eligendi culpa sed repellat architecto praesentium aliquid quod, nulla consequatur in vero fuga veritatis ipsam, dicta?</p>
+
+                <p><a class="btn btn-primary btn-sm fw-light " href="./hastalistele.php">Detaylar İçin »</a></p>
+            </div><!-- /.col-lg-4 -->
+    
+            <!-- Card Item -2 -->
+            <div class="col-lg-4">
+                <i class="fa-solid fa-laptop-medical text-bg-primary fs-1 p-5 bg-primary border border-5 border-primary-subtle rounded-circle"></i>
+
+                <h2 class="display-6 mt-3">Görüntü Yükle</h2>
+                <p class="text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe id harum nemo inventore voluptates laudantium deleniti quisquam aspernatur, vitae a minima quo ab nostrum reiciendis amet blanditiis nobis optio odit.</p>
+
+                <p><a class="btn btn-primary btn-sm fw-light " href="./goruntuyukle.php">Detaylar İçin »</a></p>
+            </div><!-- /.col-lg-4 -->
+    
+            <!-- Card Item-3 -->
+            <div class="col-lg-4">
+                <i class="fa-solid fa-x-ray text-bg-primary fs-1 p-5 bg-primary border border-5 border-primary-subtle rounded-circle"></i>
+
+                <h2 class="display-6 mt-3">Görüntüleri Listele</h2>
+                <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, similique vitae numquam nobis expedita amet mollitia sapiente unde provident quo, consectetur necessitatibus tempore fuga laudantium.</p>
+
+                <p><a class="btn btn-primary btn-sm fw-light " href="#">Detaylar İçin »</a></p>
+            </div><!-- /.col-lg-4 -->
+        </div><!-- /.row --> 
+    </div>
+    <!-- Feature Cards End -->
+
+
+    <!-- Features Listing -->
+    <div class="container">
+        
+        <!-- Feature Row -1 -->
+        <div class="row my-5">
+    
+            <!-- Feature Col -1 -->
+            <div class="col-md-7">
+                <h2 class="display-6 lh-1">Özellik <span class="text-body-secondary">Bir</span></h2>
+                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, atque hic. Explicabo laborum eius at nihil exercitationem voluptatum nemo odit.</p>
+            </div><!--./col-md-7-->
+    
+            <!-- Feature Col -2 -->
+            <div class="col-md-5">
+                <img src="./src/images/illustrations/undraw_one.svg" alt="two docs illustration" width="500" height="500">                                
+            </div><!--./col-md-5-->
+        </div><!--./row-->
+      
+        <!-- Feature Row -2 -->
+        <div class="row my-5">
+    
+            <!-- Feature Col -1 -->
+            <div class="col-md-7 order-md-2">
+                <h2 class="display-6 lh-1">Özellik <span class="text-body-secondary">İki</span></h2>
+                <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus labore repellendus, minima laudantium rerum, illo esse explicabo cum exercitationem eos quibusdam ex itaque! Cum, nostrum cumque quam dolorem esse officiis!</p>
+            </div><!--./col-md-7 order-md-2-->
+    
+            <!-- Feature Col -2 -->
+            <div class="col-md-5 order-md-1">
+                <img src="./src/images/illustrations/undraw_two.svg" alt="two nurse illustration" width="500" height="500">
+            </div><!--./col-md-5 order-md-1-->
+        </div><!--./row-->
+      
+        <!-- Feature Row -3 -->
+        <div class="row my-5">
+    
+            <!-- Feature Col -1 -->
+            <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1">Özellik <span class="text-body-secondary">Üç</span></h2>
+                <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum molestias quo magni laudantium eaque, autem ducimus. Iusto quae harum, ipsam sint animi cumque hic aspernatur ullam veritatis nihil officia quasi, quo quaerat eveniet ex id? Earum quisquam nemo sed at?</p>
+            </div><!--./col-md-7-->
+    
+            <!-- Feature Col -2 -->
+            <div class="col-md-5">
+                <img src="./src/images/illustrations/undraw_three.svg" alt="medicine illustrator" width="500" height="500">
+            </div><!--./col-md-5-->
+        </div><!--./row-->  
+    </div>
+    <!-- Features Listing End -->
+
+    
+
+    <!------------------------------------Footer------------------------------------>
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <p class="col-md-4 mb-0 text-body-secondary">© 2023 Sonat Saygın İpek</p>
+        
+            <a href="./" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                <b class="fw-bold fs-5">NT Final</b>
+            </a>
+      
+            <!-- Footer Links -->
+            <ul class="nav col-md-4 justify-content-end">
+                <li class="nav-item"><a href="./" class="nav-link px-2 text-body-secondary">Ana Sayfa</a></li>
+                <li class="nav-item"><a href="./hastalistele.php" class="nav-link px-2 text-body-secondary">Hastalar</a></li>
+                <li class="nav-item"><a href="./goruntuyukle.php" class="nav-link px-2 text-body-secondary">Görüntü Yükle</a></li>
+            </ul>
+            
+        </footer>
+    </div>
+    <!------------------------------------Footer  End------------------------------->
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+
+    <!-- Bootstrap CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+    <!-- Main JS File -->
+    <script src="src/javascript/main.js"></script>
+</body>
+</html>
