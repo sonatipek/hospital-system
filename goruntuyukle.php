@@ -54,7 +54,7 @@ $data=$db->fetchAllData($sql);
 
     <main class="container mt-5">
 
-        <h1 class="display-1">Hasta Seçim</h1>
+        <h1 class="display-3">Hasta Seçim</h1>
         <p class="text-secondary">*Görüntüsünü yüklemek için bir hasta seçiniz!</p>
 
         <!-- Upload Image Cards Listing -->
