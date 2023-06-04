@@ -75,7 +75,10 @@ $data=$db->fetchAllData($sql);
                                     <h4 class='text-secondary'>T.C. Numarası</h4>
                                     <h3 class='card-title pricing-card-title mb-4 text-primary-emphasis'>".$data[$i]['tcno']."</h3>
 
-                                    <a href='./goruntuyukle.php?tcno=".$data[$i]['tcno']."' class='w-100 btn btn-primary mt-1'>Görüntü Yükle</a>
+                                    <a href='./goruntuyukle.php?tcno=".$data[$i]['tcno']."' class='w-100 btn btn-outline-primary mt-1 opacity-50'>
+                                        Görüntü Yükle
+                                        <i class='fa-solid fa-cloud-arrow-up'></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>
