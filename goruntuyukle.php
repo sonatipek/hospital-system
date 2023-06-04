@@ -53,47 +53,38 @@ $data=$db->fetchAllData($sql);
     <!-----------------------------Navbar End---------------------->
 
     <main class="container mt-5">
-        <!-- Patient List -->
-        <table class="table table-primary table-striped table-hover">
-            <!-- Table Titltes -->
-            <thead>
-                <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Hasta T.C. No</th>
-                    <th scope="col">Hasta Adı</th>
-                    <th scope="col">Hasta Soyadı</th>
-                    <th scope="col">Hasta İşlem</th>
-                </tr>
-            </thead>
-            <!-- Table Title End -->
-    
-            <tbody>
-    
-                <!-- Table Data Listing -->
-                <?php
-                    $len=count($data);
-                    for ($i=0; $i < $len; $i++) { 
-                        echo "
-                            <tr>
-                                <th scope='row'>$i </th>
-                                <td>".$data[$i]['tcno']."</td>
-                                <td>".$data[$i]['adi']."</td>
-                                <td>".$data[$i]['soyad']."</td>
-                                <td><a href='./goruntuyukle.php?tcno=".$data[$i]['tcno']."' class='link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover'>
-                                    Görüntü Yükle
-                                    <i class='fa-solid fa-file-arrow-up ms-1'></i>
-                                </a></td>
-                            </tr>
-                        ";
-                    }
-                    
-                ?>
-                <!-- Table Data Listing End -->
-        
-            </tbody>
-        </table>
-        <!-- Patient List End -->
 
+        <h1 class="display-1">Hasta Seçim</h1>
+        <p class="text-secondary">*Görüntüsünü yüklemek için bir hasta seçiniz!</p>
+
+        <!-- Upload Image Cards Listing -->
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center mt-5">
+
+            <!-- reproduction of cards according to the data -->
+            <?php
+                $len=count($data);
+                for ($i=0; $i < $len; $i++) { 
+                    echo "
+                        <div class='col'>
+                            <div class='card mb-4 rounded-3 shadow-sm border-primary-subtle'>
+                                <div class='card-header py-3 bg-primary-subtle border-primary-subtle'>
+                                    <h2 class='my-0 text-primary-emphasis'>".$data[$i]['adi']. " ".$data[$i]['soyad']."</h2>
+                                </div>
+                                
+                                <div class='card-body'>
+                                    <h4 class='text-secondary'>T.C. Numarası</h4>
+                                    <h3 class='card-title pricing-card-title mb-4 text-primary-emphasis'>".$data[$i]['tcno']."</h3>
+
+                                    <a href='./goruntuyukle.php?tcno=".$data[$i]['tcno']."' class='w-100 btn btn-primary mt-1'>Görüntü Yükle</a>
+                                </div>
+                            </div>
+                        </div>
+                    ";
+                } 
+            ?>
+
+        </div>
+        <!-- Upload Image Card Listing End -->
     </main>
 
 
