@@ -60,9 +60,8 @@
         <!-- Search Section -->
         <div id="search-section ">
 
-
             <div class="input-group input-group-lg">
-                <span class="input-group-text">Hasta Listesinde Arama Yap</span>
+                <span class="input-group-text bg-primary-subtle">Hasta Listesinde Arama Yap</span>
                 <input type="text" id="search-input-lg" class="form-control" aria-label="Patient Search" aria-describedby="inputGroup-sizing-lg" placeholder="Ara...">
             </div><!-- ./input-group input-grouo-lg -->
 
