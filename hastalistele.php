@@ -48,6 +48,13 @@
                     <li class="nav-item">
                         <a class="nav-link" href="./goruntuyukle.php">Görüntü Yükle</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./goruntulistele.php">Görüntü Listele</a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="./hastaekle.php" class="btn btn-outline-primary">Hasta Ekle</a></li>
                 </ul>
             </div>
         </div>
@@ -129,6 +136,7 @@
                 <li class="nav-item"><a href="./" class="nav-link px-2 text-body-secondary">Ana Sayfa</a></li>
                 <li class="nav-item"><a href="./hastalistele.php" class="nav-link px-2 text-body-secondary">Hastalar</a></li>
                 <li class="nav-item"><a href="./goruntuyukle.php" class="nav-link px-2 text-body-secondary">Görüntü Yükle</a></li>
+                <li class="nav-item"><a href="./goruntulistele.php" class="nav-link px-2 text-body-secondary">Görüntü Listele</a></li>
             </ul>
             
         </footer>
