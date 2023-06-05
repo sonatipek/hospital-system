@@ -50,13 +50,12 @@ $tcno=$_GET["tcno"];
     <!-----------------------------Navbar End---------------------->
 
 
-
     <main class="container mt-3">
         <h1 class="display-3">Görüntü Yükle</h1>
     
         <div class="input-group input-group-lg px-5 mt-4">
-            <input type="file" accept="image/*" class="form-control form-control-lg " id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
-            <button class="btn btn-lg btn-outline-primary" type="button" id="inputGroupFileAddon04"><i class="fa-solid fa-cloud-arrow-up me-3"></i>Görüntüyü Yükle</button>
+            <input id="upload-input" type="file" accept="image/*" class="form-control form-control-lg " id="inputGroupFile04" aria-describedby="upload-button" aria-label="Upload">
+            <button class="btn btn-lg btn-outline-primary" type="button" id="upload-button"><i class="fa-solid fa-cloud-arrow-up me-3"></i>Görüntüyü Yükle</button>
         </div>
         <p class="text-secondary px-5">Görüntü yüklemek için 'Dosya Seç' butonuna tıklayınız.</p>
     </main>
@@ -79,7 +78,7 @@ $tcno=$_GET["tcno"];
     </div>
     <!-- Fixed Information Card End -->
 
-
+    <div id="image-display"></div>
 
     <!------------------------------------Footer------------------------------------>
     <div class="container position-fixed bottom-0 start-50 translate-middle">
@@ -102,12 +101,16 @@ $tcno=$_GET["tcno"];
     <!------------------------------------Footer  End------------------------------->
 
 
-
+    <!-- ... -->
+    <input type="hidden" id="tcno" value="<?php echo $tcno;?>"> 
     <!-- jQuery CDN -->
     <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
 
     <!-- Bootstrap CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+    <!-- Main.js File -->
+    <script src="./src/javascript/fileUpload.js"></script>
 
 </body>
 </html>
