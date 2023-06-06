@@ -1,3 +1,12 @@
+<?php
+require_once("./db/config.php");
+require_once("./db/dbconnect.php");
+
+$db=new DBConnect();
+$sql="SELECT * FROM hastabilgileri";
+$data=$db->fetchAllData($sql);
+?>
+
 <!doctype html>
 <html lang="tr-TR">
 <head>
@@ -50,7 +59,44 @@
     </nav>
     <!-----------------------------Navbar End---------------------->
 
+ 
+    <main class="container mt-5">
 
+        <h1 class="display-3">Görüntü Seçim</h1>
+        <p class="text-secondary">*Görüntüsünü listelemek için bir hasta seçiniz!</p>
+
+        <!-- Upload Image Cards Listing -->
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center mt-5">
+
+            <!-- reproduction of cards according to the data -->
+            <?php
+                $len=count($data);
+                for ($i=0; $i < $len; $i++) { 
+                    echo "
+                        <div class='col'>
+                            <div class='card mb-4 rounded-3 shadow-sm border-primary-subtle'>
+                                <div class='card-header py-3 bg-primary-subtle border-primary-subtle'>
+                                    <h2 class='my-0 text-primary-emphasis'>".$data[$i]['adi']. " ".$data[$i]['soyad']."</h2>
+                                </div>
+                                
+                                <div class='card-body'>
+                                    <h4 class='text-secondary'>T.C. Numarası</h4>
+                                    <h3 class='card-title pricing-card-title mb-4 text-primary-emphasis'>".$data[$i]['tcno']."</h3>
+
+                                    <a href='./goruntugoster.php?tcno=".$data[$i]['tcno']."' class='w-100 btn btn-outline-primary mt-1 opacity-50'>
+                                        Görüntü Listele
+                                        <i class='fa-solid fa-clipboard-list'></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    ";
+                } 
+            ?>
+
+        </div>
+        <!-- Upload Image Card Listing End -->
+    </main>
     
 
     <!------------------------------------Footer------------------------------------>
