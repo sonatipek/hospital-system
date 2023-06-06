@@ -64,6 +64,23 @@ $tcno=$_GET["tcno"];
     </nav>
     <!-----------------------------Navbar End---------------------->
 
+        <!-- Fixed Information Card -->
+        <div class="mt-5 mx-3 w-25">
+            <div class="border border-primary-subtle shadow rounded-3">
+                <!-- Card Title -->
+                <div class="bg-primary-subtle border border-bottom border-primary-subtle rounded-top  px-3 py-2 ">
+                    <i class="fa-solid fa-circle-info text-primary-emphasis me-1"></i>
+                    <strong class="text-primary-emphasis">İşlem Yaptığınız Hastanın T.C. Numarası</strong>
+                </div>
+
+                <!-- Card Desc -->
+                <div class="text-secondary px-3 py-3">
+                    <?php echo $tcno;?>
+                </div>
+            </div>
+        </div>
+        <!-- Fixed Information Card End -->
+
 
     <main class="container mt-3">
         <h1 class="display-3">Görüntü Yükle</h1>
@@ -76,24 +93,6 @@ $tcno=$_GET["tcno"];
     </main>
 
 
-    <!-- Fixed Information Card -->
-    <div class="mt-5 mx-3 position-fixed top-50 end-0">
-        <div class="border border-primary-subtle shadow rounded-3">
-            <!-- Card Title -->
-            <div class="bg-primary-subtle border border-bottom border-primary-subtle rounded-top  px-3 py-2 ">
-                <i class="fa-solid fa-circle-info text-primary-emphasis me-1"></i>
-                <strong class="text-primary-emphasis">İşlem Yaptığınız Hastanın T.C. Numarası</strong>
-            </div>
-
-            <!-- Card Desc -->
-            <div class="text-secondary px-3 py-3">
-                <?php echo $tcno;?>
-            </div>
-        </div>
-    </div>
-    <!-- Fixed Information Card End -->
-
-    <div id="image-display"></div>
 
     <!------------------------------------Footer------------------------------------>
     <div class="container position-fixed bottom-0 start-50 translate-middle">
