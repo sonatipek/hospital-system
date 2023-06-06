@@ -42,7 +42,16 @@
                     </li>
                 </ul>
 
+
                 <ul class="navbar-nav">
+                    <li class="nav-item dropdown me-2">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Diğer İşlemler
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="./hastasil.php">Hasta Sil</a></li>
+                        </ul>
+                    </li>
                     <li class="nav-item"><a href="./hastaekle.php" class="btn btn-outline-primary">Hasta Ekle</a></li>
                 </ul>
             </div>
@@ -50,11 +59,6 @@
     </nav>
     <!-----------------------------Navbar End---------------------->
 
-    <?php
-        if (isset($_GET)) {
-            # code...
-        }
-    ?>
 
     <!-- Success Information -->
     <?php if(isset($_GET['success'])) : ?>
