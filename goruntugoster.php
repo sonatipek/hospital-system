@@ -17,7 +17,7 @@ $data=$db->fetchAllData($sql);
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="shortcut icon" href="./src/images/favicon/logoipsum-296.svg" type="image/x-icon">
-    <title>Nesne Tabanlı Programlama Final | Sonat Saygın İpek</title>
+    <title>İnternet Programcılığı Final | Sonat Saygın İpek</title>
 
     <!-- Bootstrap CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
