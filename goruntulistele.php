@@ -14,7 +14,7 @@ $data=$db->fetchAllData($sql);
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="shortcut icon" href="./src/images/favicon/logoipsum-296.svg" type="image/x-icon">
-    <title>İnternet Programcılığı Final | Sonat Saygın İpek</title>
+    <title>Nesne Tabanlı Programlama Final | Sonat Saygın İpek</title>
 
     <!-- Bootstrap CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
@@ -53,7 +53,8 @@ $data=$db->fetchAllData($sql);
 
 
                 <ul class="navbar-nav">
-                    <li class="nav-item dropdown me-2">
+                    <li class="nav-item"><a href="./hastaekle.php" class="btn btn-primary">Hasta Ekle</a></li>
+                    <li class="nav-item dropdown ms-2">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                           Diğer İşlemler
                         </a>
@@ -61,7 +62,6 @@ $data=$db->fetchAllData($sql);
                           <li><a class="dropdown-item" href="./hastasil.php">Hasta Sil</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a href="./hastaekle.php" class="btn btn-outline-primary">Hasta Ekle</a></li>
                 </ul>
             </div>
         </div>

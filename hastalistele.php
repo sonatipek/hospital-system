@@ -55,7 +55,8 @@
 
 
                 <ul class="navbar-nav">
-                    <li class="nav-item dropdown me-2">
+                    <li class="nav-item"><a href="./hastaekle.php" class="btn btn-primary">Hasta Ekle</a></li>
+                    <li class="nav-item dropdown ms-2">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                           Diğer İşlemler
                         </a>
@@ -63,7 +64,6 @@
                           <li><a class="dropdown-item" href="./hastasil.php">Hasta Sil</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a href="./hastaekle.php" class="btn btn-outline-primary">Hasta Ekle</a></li>
                 </ul>
             </div>
         </div>
