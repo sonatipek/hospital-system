@@ -12,6 +12,12 @@
 
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Alpine Plugins -->
+    <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/mask@3.x.x/dist/cdn.min.js"></script>
+    
+    <!-- Alpine Core -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <body>
     <!----------------------------Navbar--------------------------->
@@ -77,7 +83,7 @@
     <!-- Unsuccess Information End -->
 
     <main class="container mx-auto w-25 mt-5">
-        <form method="POST" action="./db/hastakayit.php">
+        <form method="POST" action="./db/hastakayit.php" x-data>
             <!-- Form Image -->
             <div class="col-12 text-center">
                 <img class="mb-4" src="./src/images/brand_logo.svg" alt="logo" height="60">
@@ -106,14 +112,14 @@
             <!-- Hasta TC -->
             <div class="col-12 my-2">
                 <label for="hasta_tc" class="form-label">Hasta T.C. No</label>
-                <input type="number" class="form-control" id="hasta_tc" name="hasta_tc">
+                <input x-mask="999 999 999 99" class="form-control" id="hasta_tc" name="hasta_tc">
             </div>
             <!-- Hasta TC End -->
 
             <!-- Hasta Tel -->
             <div class="col-12 my-2">
                 <label for="hasta_tel" class="form-label">Hasta Tel. No</label>
-                <input type="number" class="form-control" id="hasta_tel" name="hasta_tel">
+                <input x-mask:dynamic="$input.startsWith('0') ? '0 (999) 999 9999': '(999) 999 9999' "  class="form-control" id="hasta_tel" name="hasta_tel">
             </div>
             <!-- Hasta Tel End -->
     
