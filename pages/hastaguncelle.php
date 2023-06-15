@@ -94,7 +94,7 @@
     <?php endif; ?>
     <!-- Unsuccess Information End -->
 
- 
+
     <main class="container mx-auto w-25 mt-5">
         <form method="POST" action="../db/hastayiguncelle.php">
             <!-- Form Image -->
@@ -184,11 +184,12 @@
     <script>
         let selectPatient = document.querySelector('#patitent-select');
         let tcInput = document.querySelector('#hasta_tc');
-        let telInput = document.querySelector('#hasta_tel');
+
  
         selectPatient.addEventListener('change', () => {
 
-            tcInput.value = selectPatient.value
+            tcInput.value = selectPatient.value;
+
         })
     </script>
 </body>
