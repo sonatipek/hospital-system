@@ -10,4 +10,4 @@ $sql="DELETE FROM hastabilgileri WHERE hastaid=$hasta_id";
 $data=$db->fetchAllData($sql);
 
 
-header("Location:./hastasil.php?success=1");
+header("Location:./pages/hastasil.php?success=1");
