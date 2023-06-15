@@ -11,4 +11,4 @@ $sql="DELETE FROM resimler WHERE resim_id=$resim_id";
 $data=$db->fetchAllData($sql);
 
 
-header("Location:./goruntugoster.php?success=1&tcno=$tcno");
+header("Location:./pages/goruntugoster.php?success=1&tcno=$tcno");

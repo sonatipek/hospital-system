@@ -37,10 +37,10 @@ $( document ).ready(function() {
         canvas.width = 144;
         canvas.height = 73;
         ctx.drawImage(imgEl, 0,0, canvas.width, canvas.height);
-
-
+        
+        
         // Go resimkaydet.php and save to db 
-        $.post(`./db/resimkaydet.php?tcno=${$("#tcno").val()}`, {resim:canvas.toDataURL("image/png")}, (res) => {
+        $.post(`../db/resimkaydet.php?tcno=${$("#tcno").val()}`, {resim:canvas.toDataURL("image/png")}, (res) => {
             if (res === "1") {
                 alert("Yükleme İşlemi Başarılı\nYönlendirileceksiniz...")
                 window.location.replace("./goruntuyukle.php");
