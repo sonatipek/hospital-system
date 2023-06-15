@@ -102,6 +102,7 @@
                     <th scope="col">Hasta Telefon No</th>
                     <th scope="col">Hasta Görüntü Yükle</th>
                     <th scope="col">Hasta Görüntü Listele</th>
+                    <th scope="col">Hasta Detay Görüntüle</th>
                 </tr>
             </thead>
             <!-- Table Title End -->
@@ -121,6 +122,7 @@
                                 <td>".$data[$i]['tlfno']."</td>
                                 <td> <a class='link-secondary' href='yuklemeekrani.php?tcno=". $data[$i]['tcno'] ."'><i class='fa-solid fa-cloud-arrow-up me-2'></i>Görüntü Yükle</a></td>
                                 <td> <a class='link-secondary' href='goruntugoster.php?tcno=". $data[$i]['tcno'] ."'><i class='fa-solid fa-clipboard-list me-2'></i>Görüntü Listele</a></td>
+                                <td> <a id='popover-dismiss-".$i + 1 ."' tabindex='0' class='myPopovers btn btn-sm btn-outline-primary' role='button' data-bs-toggle='popover' data-bs-trigger='focus' data-bs-title='Adres' data-bs-content='Buraya Adres Bilgisi Gelecek ". $data[$i]['tcno'] ."'>Detaylı Bilgi</a> </td>
                             </tr>
                         ";
                     }
@@ -173,8 +175,18 @@
                     $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
                 });
             });
-    });
+        });
 
+    </script>
+
+    <script>
+        let popovers = document.querySelectorAll('.myPopovers');
+
+        popovers.forEach(popover => {
+            new bootstrap.Popover(`#${popover.id}`, {
+                trigger: 'focus'
+            })
+        });
     </script>
 </body>
 </html>

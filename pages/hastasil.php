@@ -83,7 +83,7 @@
     <main class="container mt-5">
 
         
-        <h1 class="display-3 mt-5">Hast Listesi</h1>
+        <h1 class="display-3 mt-5">Hasta Listesi</h1>
 
         <!-- Patient List -->
         <table class="table table-primary table-striped table-hover mt-3">
