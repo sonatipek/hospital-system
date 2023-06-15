@@ -123,7 +123,29 @@
                                 <td>".$data[$i]['tlfno']."</td>
                                 <td> <a class='link-secondary' href='yuklemeekrani.php?tcno=". $data[$i]['tcno'] ."'><i class='fa-solid fa-cloud-arrow-up me-2'></i>Görüntü Yükle</a></td>
                                 <td> <a class='link-secondary' href='goruntugoster.php?tcno=". $data[$i]['tcno'] ."'><i class='fa-solid fa-clipboard-list me-2'></i>Görüntü Listele</a></td>
-                                <td> <a id='popover-dismiss-".$i + 1 ."' tabindex='0' class='myPopovers btn btn-sm btn-outline-primary' role='button' data-bs-toggle='popover' data-bs-trigger='focus' data-bs-title='Adres' data-bs-content='". $data[$i]['adres'] ."'>Detaylı Bilgi</a> </td>
+                                <td>
+                                    <div class='dropdown'>
+                                        <button class='btn btn-sm btn-outline-primary dropdown-toggle' type='button' data-bs-toggle='dropdown' aria-expanded='false' data-bs-auto-close='outside'>
+                                            Detaylı Bilgi
+                                        </button>
+                                    <ul class='dropdown-menu' >
+                                        <li class='dropdown-item'>
+                                            <h6>Adres Bilgisi</h6>
+                                            <ul class='list-group'>
+                                                <li class='list-group-item'>". $data[$i]['adres'] ."</li>
+                                            </ul>
+                                        </li>
+                                        <li><hr class='dropdown-divider'></li>
+                                        <li class='dropdown-item'>
+                                            <h6>Email Bilgisi</h6>
+                                            <ul class='list-group'>
+                                                <li class='list-group-item'>". $data[$i]['email'] ."</li>
+                                            </ul>
+                                        </li>
+                             
+                                    </ul>
+                                </div>
+                                </td>
                             </tr>
                         ";
                     }
@@ -180,14 +202,5 @@
 
     </script>
 
-    <script>
-        let popovers = document.querySelectorAll('.myPopovers');
-
-        popovers.forEach(popover => {
-            new bootstrap.Popover(`#${popover.id}`, {
-                trigger: 'focus'
-            })
-        });
-    </script>
 </body>
 </html>
