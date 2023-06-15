@@ -108,8 +108,9 @@
 
             <!-- Hasta seçimi -->
             <div class="row">
-
-                <div class="col-12 mb-2">
+                
+                <div class="col-12 my-2">
+                    <label for="hasta_mail" class="form-label">Hasta Seçimi</label>
                     <select id="patitent-select" class="form-select" aria-label="select patient">
                         <option selected>Güncellemek İstediğiniz Hastayı Seçiniz</option>
                         <?php
@@ -132,11 +133,21 @@
             </div>
             <!-- Hasta TC End -->
 
+
+            <!-- Hasta Email -->
+            <div class="col-12 my-2">
+                <label for="hasta_mail" class="form-label">Hasta E-Mail</label>
+                <input type="email" class="form-control" id="hasta_mail" name="hasta_mail" >
+            </div>
+            <!-- Hasta Email End -->
+
+            <!-- Hasta Adres -->
             <div class="col-12 mb-2">
                 <label for="hasta_adres" class="form-label">Hasta Adresi</label>
                 <textarea class="form-control" id="hasta_adres" name="hasta_adres" rows="3" maxlength="255" placeholder="Hastanın Adersini Giriniz..."></textarea>
             </div>
-    
+            <!-- Hasta Adres End -->
+
             <button class="btn btn-lg btn-primary w-100 mt-4" type="submit">Ekle</button>
         </form>
     </main>
