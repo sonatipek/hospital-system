@@ -100,6 +100,8 @@
                     <th scope="col">Hasta Adı</th>
                     <th scope="col">Hasta Soyadı</th>
                     <th scope="col">Hasta Telefon No</th>
+                    <th scope="col">Hasta Görüntü Yükle</th>
+                    <th scope="col">Hasta Görüntü Listele</th>
                 </tr>
             </thead>
             <!-- Table Title End -->
@@ -117,6 +119,8 @@
                                 <td>".$data[$i]['adi']."</td>
                                 <td>".$data[$i]['soyad']."</td>
                                 <td>".$data[$i]['tlfno']."</td>
+                                <td> <a class='link-secondary' href='yuklemeekrani.php?tcno=". $data[$i]['tcno'] ."'><i class='fa-solid fa-cloud-arrow-up me-2'></i>Görüntü Yükle</a></td>
+                                <td> <a class='link-secondary' href='goruntugoster.php?tcno=". $data[$i]['tcno'] ."'><i class='fa-solid fa-clipboard-list me-2'></i>Görüntü Listele</a></td>
                             </tr>
                         ";
                     }
