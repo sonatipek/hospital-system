@@ -38,7 +38,7 @@ $data=$db->fetchAllData($sql);
             <div class="collapse navbar-collapse ms-5" id="navbarsExample07">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-5">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./">Ana Sayfa</a>
+                        <a class="nav-link active" aria-current="page" href="../">Ana Sayfa</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./hastalistele.php">Hastalar</a>
@@ -120,7 +120,7 @@ $data=$db->fetchAllData($sql);
       
             <!-- Footer Links -->
             <ul class="nav col-md-4 justify-content-end">
-                <li class="nav-item"><a href="./" class="nav-link px-2 text-body-secondary">Ana Sayfa</a></li>
+                <li class="nav-item"><a href="../" class="nav-link px-2 text-body-secondary">Ana Sayfa</a></li>
                 <li class="nav-item"><a href="./hastalistele.php" class="nav-link px-2 text-body-secondary">Hastalar</a></li>
                 <li class="nav-item"><a href="./goruntuyukle.php" class="nav-link px-2 text-body-secondary">Görüntü Yükle</a></li>
                 <li class="nav-item"><a href="./goruntulistele.php" class="nav-link px-2 text-body-secondary">Görüntü Listele</a></li>
