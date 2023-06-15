@@ -57,6 +57,7 @@
                         </a>
                         <ul class="dropdown-menu">
                           <li><a class="dropdown-item" href="./hastasil.php">Hasta Sil</a></li>
+                          <li><a class="dropdown-item" href="./hastaguncelle.php">Hasta Güncelle</a></li>
                         </ul>
                     </li>
                 </ul>
