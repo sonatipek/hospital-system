@@ -113,7 +113,7 @@
                                 <td id='search-col'>".$data[$i]['tcno']."</td>
                                 <td>".$data[$i]['adi']."</td>
                                 <td>".$data[$i]['soyad']."</td>
-                                <td><a class='btn btn-sm btn-outline-primary' href='../silmeislemi.php?hastaid=$hastaid'><i class='fa-solid fa-user-minus me-3'></i>Hastayı Sil</a></td>
+                                <td><a class='btn btn-sm btn-outline-primary' href='../db/silmeislemi.php?hastaid=$hastaid'><i class='fa-solid fa-user-minus me-3'></i>Hastayı Sil</a></td>
                             </tr>
                         ";
                     }

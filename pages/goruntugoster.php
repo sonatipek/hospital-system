@@ -120,7 +120,7 @@ $data=$db->fetchAllData($sql);
                                 <div class='d-flex justify-content-between align-items-center'>
                                     <small class='text-body-secondary'>Resim No: <b>". $i + 1 ."</b> </small>
 
-                                    <a href='../goruntuyusil.php?tcno=$tcno&resimid=$result_id' class='btn btn-sm btn-outline-danger'>Görüntüyü Sil</a>
+                                    <a href='../db/goruntuyusil.php?tcno=$tcno&resimid=$result_id' class='btn btn-sm btn-outline-danger'>Görüntüyü Sil</a>
                                 </div>
                             </div>
                         </div>
