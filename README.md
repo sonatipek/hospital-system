@@ -1,21 +1,3 @@
- 
-## Kullanılan Teknolojiler
-
-**İstemci:**  Bootstrap
-
-**Sunucu:** PHP
-
-  
-## Ortam Değişkenleri
-
-Bu projeyi çalıştırmak için aşağıdaki ortam değişkenlerini dosyanıza eklemeniz gerekecek
-
-`API_KEY`
-
-`ANOTHER_API_KEY`
-
-
-
 <p align="center" width="100%">
     <img width="25%" src="https://raw.githubusercontent.com/sonatipek/dogadan-tea-advices/main/public/sonatipek-brand-logo.svg"> 
 </p>
@@ -41,6 +23,13 @@ A patient registration and image upload application where patient records can be
 ![image](https://github.com/sonatipek/hospital-system/assets/80075444/c7a95cff-2db1-4a59-bec5-b736c1b806a1)
 ![image](https://github.com/sonatipek/hospital-system/assets/80075444/cd27391a-9a45-45c5-a9f4-c53a767368f2)
 ![image](https://github.com/sonatipek/hospital-system/assets/80075444/b0cfe54a-6ccf-4688-b4cb-6a7f149d300d)
+
+## Environment Variables
+To run this project you will need to add the following environment variables to your file
+
+`db/config.php > DB_USER`
+
+`db/config.php > DB_PASS`
 
 
 ## 🚀 Run on Your Computer
@@ -103,6 +92,13 @@ Hasta kayıtlarının yapıldığı, resimlerinin yüklenilebildiği bir hasta k
 ![image](https://github.com/sonatipek/hospital-system/assets/80075444/c7a95cff-2db1-4a59-bec5-b736c1b806a1)
 ![image](https://github.com/sonatipek/hospital-system/assets/80075444/cd27391a-9a45-45c5-a9f4-c53a767368f2)
 ![image](https://github.com/sonatipek/hospital-system/assets/80075444/b0cfe54a-6ccf-4688-b4cb-6a7f149d300d)
+
+## Ortam Değişkenleri
+Bu projeyi çalıştırmak için aşağıdaki ortam değişkenlerini dosyanıza eklemeniz gerekecek
+
+`db/config.php > DB_USER`
+
+`db/config.php > DB_PASS`
 
 
 ## 🚀 Bilgisayarınızda Çalıştırın
